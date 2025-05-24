@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
         return;
       }
 
-      const response = await fetch('http://localhost:5000/api/auth/me', {
+      const response = await fetch("https://deployment-backend-i3yl.onrender.com", {
         headers: {
           'Authorization': `Bearer ${token}`
         }
